@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solanke Enterprises | Precision Machining | ISO 9001:2015 | Vendor Profile 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM
+═══════════════════════════════════════════ */
+:root {
+  --ink:        #0c1a27;
+  --ink-mid:    #1b3a52;
+  --ink-soft:   #2e5470;
+  --copper:     #b87333;
+  --copper-lt:  #d4924d;
+  --copper-pale:#f5e8d8;
+  --copper-glow:rgba(184,115,51,0.15);
+  --slate:      #546e7a;
+  --mist:       #eef2f7;
+  --cloud:      #f7f9fc;
+  --white:      #ffffff;
+  --text:       #1e3448;
+  --text-2:     #3d5a70;
+  --text-3:     #6b859a;
+  --border:     #dce4ed;
+  --shadow-sm:  0 2px 8px rgba(12,26,39,0.08);
+  --shadow-md:  0 8px 24px rgba(12,26,39,0.12);
+  --shadow-lg:  0 24px 56px rgba(12,26,39,0.18);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: #b8bec6;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0 80px;
+  gap: 0;
+}
+
+/* ═══ PAGE SHELL ═══ */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  background: var(--white);
+  margin: 20px auto;
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(12,26,39,0.07);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  page-break-after: always;
+  break-after: page;
+}
+
+/* ═══════════════════════════════════════════
+   PAGE 1 — COVER
+═══════════════════════════════════════════ */
+.cover {
+  background: var(--ink);
+  min-height: 297mm;
+}
+
+.cv-geo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cv-geo-circle1 {
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  top: -160px; right: -160px;
+  background: radial-gradient(circle, rgba(184,115,51,0.18) 0%, transparent 65%);
+}
+
+.cv-geo-circle2 {
+  position: absolute;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  bottom: -80px; left: -80px;
+  background: radial-gradient(circle, rgba(184,115,51,0.10) 0%, transparent 65%);
+}
+
+.cv-geo-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 60px,
+      rgba(255,255,255,0.018) 60px,
+      rgba(255,255,255,0.018) 61px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      rgba(255,255,255,0.018) 60px,
+      rgba(255,255,255,0.018) 61px
+    );
+}
+
+.cv-sidebar {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 8px;
+  background: linear-gradient(180deg, var(--copper) 0%, var(--copper-lt) 50%, var(--copper) 100%);
+}
+
+.cv-top-bar {
+  position: absolute;
+  top: 0; left: 8px; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--copper-lt), transparent);
+}
+
+.cv-inner {
+  position: relative;
+  z-index: 2;
+  padding: 18mm 18mm 14mm 22mm;
+  min-height: 297mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: auto;
+}
+
+.cv-logo-block { display: flex; align-items: center; gap: 14px; }
+
+.cv-logo-hex {
+  width: 48px; height: 48px;
+  background: rgba(184,115,51,0.12);
+  border: 1.5px solid rgba(184,115,51,0.5);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--copper-lt);
+  font-size: 20px;
+}
+
+.cv-logo-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+}
+
+.cv-logo-tagline {
+  font-size: 9px;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 2px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.cv-doc-ref {
+  text-align: right;
+}
+
+.cv-doc-type {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.cv-doc-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--copper);
+  letter-spacing: 2px;
+}
+
+/* HERO */
+.cv-hero { margin-top: 64px; }
+
+.cv-overline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.cv-overline-line { width: 40px; height: 1px; background: var(--copper); }
+
+.cv-overline-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.cv-company-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 86px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 0.85;
+  letter-spacing: -3px;
+}
+
+.cv-company-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255,255,255,0.32);
+  letter-spacing: 2px;
+  margin-top: 6px;
+}
+
+.cv-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--copper) 0%, rgba(184,115,51,0.1) 60%, transparent 100%);
+  margin: 28px 0;
+}
+
+.cv-descriptor {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--copper-lt);
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.cv-pitch {
+  font-size: 13.5px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.48);
+  line-height: 1.75;
+  max-width: 460px;
+}
+
+/* Badge row */
+.cv-badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 44px;
+  flex-wrap: wrap;
+}
+
+.cv-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  border: 1px solid rgba(184,115,51,0.35);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  background: rgba(184,115,51,0.06);
+  font-family: 'Outfit', sans-serif;
+}
+
+.cv-badge i { color: var(--copper); font-size: 10px; }
+
+/* KPI row inside cover */
+.cv-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.cv-kpi-item {
+  background: rgba(255,255,255,0.04);
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.cv-kpi-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.cv-kpi-unit {
+  font-size: 14px;
+  color: var(--copper-lt);
+}
+
+.cv-kpi-label {
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-top: 5px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Bottom footer strip */
+.cv-bottom {
+  position: absolute;
+  bottom: 0; left: 8px; right: 0;
+  padding: 14px 20mm;
+  background: rgba(0,0,0,0.25);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-bottom-l {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: rgba(255,255,255,0.22);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cv-bottom-r {
+  font-size: 9px;
+  color: rgba(255,255,255,0.18);
+  font-style: italic;
+}
+
+/* ═══════════════════════════════════════════
+   INNER PAGE STRUCTURE
+═══════════════════════════════════════════ */
+.pg-top-rule {
+  height: 4px;
+  background: linear-gradient(90deg, var(--copper) 0%, var(--copper-lt) 40%, var(--mist) 100%);
+  flex-shrink: 0;
+}
+
+.pg-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 18mm;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.pg-nav-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.pg-nav-logo span { color: var(--copper); }
+
+.pg-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pg-section-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.pg-num {
+  width: 26px; height: 26px;
+  background: var(--ink);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.pg-body {
+  padding: 12mm 18mm 8mm;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pg-footer {
+  flex-shrink: 0;
+  padding: 9px 18mm;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pg-footer-brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.pg-footer-conf {
+  font-size: 8px;
+  color: #c0cdd8;
+  font-style: italic;
+}
+
+/* ═══ TYPOGRAPHY ═══ */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 8px;
+}
+
+.eyebrow::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--copper-pale), transparent);
+}
+
+.heading-xl {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.heading-lg {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.heading-md {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink-mid);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.body-lg {
+  font-size: 13.5px;
+  line-height: 1.78;
+  color: var(--text-2);
+  margin-bottom: 12px;
+}
+
+.body-lg strong { color: var(--ink); font-weight: 600; }
+
+.body-sm {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--text-3);
+}
+
+/* ═══ LAYOUT HELPERS ═══ */
+.two-col { display: flex; gap: 24px; }
+.three-col { display: flex; gap: 18px; }
+.col { flex: 1; }
+.col-6 { flex: 0 0 42%; }
+.col-7 { flex: 0 0 55%; }
+.spacer-sm { height: 12px; }
+.spacer-md { height: 20px; }
+.spacer-lg { height: 28px; }
+.rule { height: 1px; background: var(--border); margin: 16px 0; }
+
+/* ═══ COMPONENTS ═══ */
+
+/* Stat Card */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.stat-card {
+  background: var(--ink);
+  border-radius: 8px;
+  padding: 16px 12px 14px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--copper), var(--copper-lt));
+}
+
+.stat-card.alt { background: var(--mist); }
+.stat-card.alt .stat-num { color: var(--ink); }
+.stat-card.alt .stat-lbl { color: var(--text-3); }
+.stat-card.alt::after { background: var(--copper); }
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-num sup {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--copper-lt);
+  vertical-align: super;
+}
+
+.stat-lbl {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+  margin-top: 5px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Vision/Mission Box */
+.vm-card {
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.vm-card.v { background: var(--mist); border-left: 3px solid var(--copper); }
+.vm-card.m { background: var(--cloud); border-left: 3px solid var(--ink-mid); }
+
+.vm-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 7px;
+}
+
+.vm-text {
+  font-size: 12.5px;
+  line-height: 1.68;
+  color: var(--text);
+}
+
+/* Bullet icon list */
+.icon-list { list-style: none; padding: 0; }
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--text-2);
+  margin-bottom: 9px;
+  line-height: 1.5;
+}
+
+.ic {
+  width: 18px; height: 18px;
+  background: var(--copper-pale);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ic i { font-size: 8px; color: var(--copper); }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 22px;
+  border-left: 2px solid var(--border);
+  margin: 14px 0;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.tl-dot {
+  position: absolute;
+  left: -27px;
+  top: 4px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--copper);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--copper);
+}
+
+.tl-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--copper);
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.tl-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.tl-desc {
+  font-size: 11.5px;
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+/* Service Cards */
+.svc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.svc-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 16px 14px;
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.svc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--copper), var(--copper-lt));
+}
+
+.svc-icon-wrap {
+  width: 34px; height: 34px;
+  background: var(--ink);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 10px;
+}
+
+.svc-icon-wrap i { color: var(--copper-lt); font-size: 13px; }
+
+.svc-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.svc-list { list-style: none; padding: 0; }
+.svc-list li {
+  font-size: 11.5px;
+  color: var(--text-3);
+  margin-bottom: 4px;
+  padding-left: 13px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.svc-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--copper);
+  font-weight: 700;
+}
+
+/* Industries */
+.chip-wrap { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; }
+
+.chip {
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  background: var(--mist);
+}
+
+.chip.accent {
+  background: var(--ink);
+  color: rgba(255,255,255,0.75);
+  border-color: var(--ink-mid);
+}
+
+/* Client table */
+.client-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.client-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  background: var(--cloud);
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+.client-mark {
+  width: 24px; height: 24px;
+  background: var(--ink);
+  border-radius: 5px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.client-mark i { font-size: 9px; color: var(--copper); }
+
+.client-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-mid);
+}
+
+.client-loc {
+  font-size: 10px;
+  color: var(--text-3);
+  margin-top: 1px;
+}
+
+/* Capability table */
+.cap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 12px;
+}
+
+.cap-table thead tr {
+  background: var(--ink);
+}
+
+.cap-table thead th {
+  padding: 9px 12px;
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cap-table tbody tr { border-bottom: 1px solid var(--border); }
+.cap-table tbody tr:last-child { border-bottom: none; }
+.cap-table tbody tr:nth-child(odd) { background: var(--cloud); }
+.cap-table tbody tr:nth-child(even) { background: var(--white); }
+
+.cap-table tbody td {
+  padding: 8px 12px;
+  color: var(--text-2);
+  line-height: 1.4;
+}
+
+.cap-table tbody td:first-child { font-weight: 600; color: var(--ink); }
+
+.val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  color: var(--copper);
+  font-weight: 500;
+}
+
+/* KPI strip */
+.kpi-bar {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  background: var(--mist);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 16px 0;
+  border: 1px solid var(--border);
+}
+
+.kpi-item { text-align: center; }
+
+.kpi-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.kpi-unit { font-size: 14px; color: var(--copper); font-weight: 600; }
+
+.kpi-lbl {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-top: 4px;
+}
+
+/* Quality banner */
+.q-banner {
+  background: linear-gradient(108deg, var(--ink) 0%, var(--ink-soft) 100%);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 14px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.q-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: rgba(184,115,51,0.12);
+}
+
+.q-banner-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.q-banner-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.q-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.q-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.5;
+}
+
+.q-tick { color: var(--copper-lt); font-size: 10px; margin-top: 2px; flex-shrink: 0; }
+
+/* Delivery matrix */
+.delivery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.del-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-align: center;
+  background: var(--cloud);
+}
+
+.del-icon { font-size: 20px; color: var(--copper); margin-bottom: 8px; }
+.del-val { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--ink); }
+.del-sub { font-size: 10px; color: var(--copper); font-weight: 600; margin-bottom: 4px; }
+.del-desc { font-size: 10.5px; color: var(--text-3); line-height: 1.5; margin-top: 4px; }
+
+/* Case Study */
+.case-study {
+  background: var(--copper-pale);
+  border: 1px solid rgba(184,115,51,0.2);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 14px 0;
+}
+
+.case-badge {
+  display: inline-block;
+  background: var(--copper);
+  color: var(--white);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 4px 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.case-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.case-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.case-blk-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 5px;
+}
+
+.case-blk-text {
+  font-size: 11.5px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Infrastructure cards */
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.infra-card {
+  background: var(--cloud);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.infra-icon { font-size: 18px; color: var(--copper); margin-bottom: 8px; }
+.infra-title { font-size: 12px; font-weight: 700; color: var(--ink); margin-bottom: 5px; }
+.infra-text { font-size: 11px; color: var(--text-3); line-height: 1.55; }
+
+/* Process flow */
+.process-flow {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 14px 0;
+  overflow-x: auto;
+}
+
+.process-step {
+  flex: 1;
+  background: var(--mist);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.process-step + .process-step::before {
+  content: '›';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--copper);
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.ps-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: var(--copper);
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.ps-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.ps-desc {
+  font-size: 10px;
+  color: var(--text-3);
+  line-height: 1.4;
+}
+
+/* Compliance table */
+.compliance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.compliance-table thead tr { background: var(--mist); }
+.compliance-table thead th {
+  padding: 8px 12px;
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--copper);
+  font-weight: 500;
+  border-bottom: 2px solid var(--copper);
+}
+
+.compliance-table tbody tr { border-bottom: 1px solid var(--border); }
+.compliance-table tbody td { padding: 8px 12px; color: var(--text-2); }
+.compliance-table tbody td:first-child { font-weight: 600; color: var(--ink); }
+
+.status-yes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #1a7a4a;
+  background: #e6f4ed;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+
+.status-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #7a5a1a;
+  background: #f4ece0;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+
+/* Why-us cards */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.why-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--white);
+  display: flex;
+  gap: 12px;
+}
+
+.why-icon-col {
+  width: 36px; height: 36px;
+  background: var(--ink);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.why-icon-col i { color: var(--copper-lt); font-size: 14px; }
+
+.why-card-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.why-card-text {
+  font-size: 11.5px;
+  color: var(--text-3);
+  line-height: 1.55;
+}
+
+/* Performance metrics */
+.perf-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.perf-card {
+  background: var(--cloud);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+}
+
+.perf-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.perf-unit { font-size: 14px; color: var(--copper); }
+.perf-lbl { font-size: 10px; color: var(--text-3); margin-top: 4px; }
+.perf-sub { font-size: 9px; color: var(--copper); font-weight: 600; margin-top: 2px; }
+
+/* BACK COVER */
+.back-cover { background: var(--ink); min-height: 297mm; }
+
+.bc-sidebar {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 8px;
+  background: linear-gradient(180deg, var(--copper), var(--copper-lt), var(--copper));
+}
+
+.bc-inner {
+  padding: 16mm 18mm 14mm 22mm;
+  /* Key fix: flex:1 to fill the remaining page height */
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.bc-geo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bc-geo::before {
+  content: '';
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  top: -100px; right: -100px;
+  background: radial-gradient(circle, rgba(184,115,51,0.12) 0%, transparent 65%);
+}
+
+.bc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 32px;
+}
+
+.bc-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.bc-logo span { color: var(--copper); }
+
+.bc-iso-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(184,115,51,0.4);
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--copper-lt);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+}
+
+.bc-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.0;
+  margin-bottom: 8px;
+}
+
+.bc-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 36px;
+  font-weight: 300;
+}
+
+.bc-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.bc-ccard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 7px;
+  padding: 14px 16px;
+}
+
+.bc-clabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 6px;
+}
+
+.bc-cval {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.6;
+}
+
+.bc-address {
+  background: rgba(184,115,51,0.08);
+  border: 1px solid rgba(184,115,51,0.22);
+  border-radius: 7px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.bc-addr-icon { color: var(--copper-lt); font-size: 18px; margin-top: 2px; }
+
+.bc-addr-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 3px;
+  color: var(--copper);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.bc-addr-text {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.65;
+}
+
+.bc-cta {
+  background: linear-gradient(90deg, var(--copper), var(--copper-lt));
+  border-radius: 7px;
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.bc-cta-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.bc-cta-note {
+  font-size: 10.5px;
+  color: rgba(12,26,39,0.55);
+  margin-top: 2px;
+}
+
+.bc-cta-arrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.bc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  margin-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.bc-foot-l {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 1.5px;
+}
+
+.bc-foot-r {
+  font-size: 8px;
+  color: rgba(255,255,255,0.15);
+  font-style: italic;
+}
+
+@media print {
+  body { background: white; padding: 0; }
+  .page { margin: 0; box-shadow: none; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     PAGE 1 — COVER
+══════════════════════════════════════════════ -->
+<div class="page cover">
+  <div class="cv-geo">
+    <div class="cv-geo-circle1"></div>
+    <div class="cv-geo-circle2"></div>
+    <div class="cv-geo-lines"></div>
+  </div>
+  <div class="cv-sidebar"></div>
+  <div class="cv-top-bar"></div>
+
+  <div class="cv-inner">
+    <div class="cv-header-row">
+      <div class="cv-logo-block">
+        <div class="cv-logo-hex"><i class="fas fa-cogs"></i></div>
+        <div>
+          <div class="cv-logo-name">Solanke Enterprises</div>
+          <div class="cv-logo-tagline">Precision Machining · Hubballi, Karnataka, India</div>
+        </div>
+      </div>
+      <div class="cv-doc-ref">
+        <div class="cv-doc-type">Vendor Registration Profile</div>
+        <div class="cv-doc-year">2025 — Edition</div>
+      </div>
+    </div>
+
+    <div class="cv-hero">
+      <div class="cv-overline">
+        <div class="cv-overline-line"></div>
+        <div class="cv-overline-text">ISO 9001:2015 Certified · Since 1985</div>
+      </div>
+
+      <div class="cv-company-name">SOLANKE</div>
+      <div class="cv-company-sub">Enterprises</div>
+      <div class="cv-divider"></div>
+
+      <div class="cv-descriptor">India's Trusted Large-Diameter Precision Machining Partner</div>
+      <div class="cv-pitch">For four decades, Solanke Enterprises has delivered machined precision components — critical valve bodies, pump casings, and custom engineered parts — to India's most demanding OEM manufacturers. Built on uncompromising quality, SPC-driven process control, and a relentless commitment to zero-defect delivery.</div>
+
+      <div class="cv-badges">
+        <div class="cv-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</div>
+        <div class="cv-badge"><i class="fas fa-expand-arrows-alt"></i> 1600mm Swing Capacity</div>
+        <div class="cv-badge"><i class="fas fa-chart-bar"></i> Cpk ≥ 1.33 SPC</div>
+        <div class="cv-badge"><i class="fas fa-shield-alt"></i> MNC Vendor Compliant</div>
+        <div class="cv-badge"><i class="fas fa-globe"></i> Export Ready</div>
+      </div>
+
+      <div class="cv-kpi-row">
+        <div class="cv-kpi-item">
+          <div class="cv-kpi-num">40<span class="cv-kpi-unit">+</span></div>
+          <div class="cv-kpi-label">Years Active</div>
+        </div>
+        <div class="cv-kpi-item">
+          <div class="cv-kpi-num">98<span class="cv-kpi-unit">%</span></div>
+          <div class="cv-kpi-label">On-Time Delivery</div>
+        </div>
+        <div class="cv-kpi-item">
+          <div class="cv-kpi-num">200<span class="cv-kpi-unit">MT+</span></div>
+          <div class="cv-kpi-label">Annual Output</div>
+        </div>
+        <div class="cv-kpi-item">
+          <div class="cv-kpi-num">85<span class="cv-kpi-unit">%</span></div>
+          <div class="cv-kpi-label">Repeat Orders</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-bottom">
+    <div class="cv-bottom-l">Established 1985 · 40+ Years of Precision Engineering Excellence</div>
+    <div class="cv-bottom-r">Vendor Profile · Commercial in Confidence · 2025</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 2 — COMPANY OVERVIEW & HISTORY
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Company Overview</div>
+      <div class="pg-num">01</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Who We Are</div>
+    <div class="heading-xl">A Four-Decade Legacy<br>of Precision Engineering</div>
+
+    <div class="two-col">
+      <div class="col-7">
+        <p class="body-lg">Established in <strong>1985</strong> by an engineer-entrepreneur with a clear vision — Solanke Enterprises has grown from a single-machine workshop into one of North Karnataka's most capable <strong>large-diameter precision machining facilities</strong>. Today, we are a <strong>ISO 9001:2015 certified</strong> manufacturing partner serving valve OEMs, pump manufacturers, and flow equipment companies across India.</p>
+        <p class="body-lg">Our <strong>10,000 sq. ft. purpose-built facility</strong> in the Gamanagatti Industrial Estate, Hubballi, operates with a team of <strong>15+ skilled machinists, quality engineers, and tooling experts</strong>. We process raw castings, forgings, and billets into dimensionally verified, ready-to-assemble components — with full material traceability and calibrated inspection documentation.</p>
+        <p class="body-lg">With an annual output exceeding <strong>200 metric tons</strong> of finished precision components, a <strong>98% on-time delivery record</strong>, and an <strong>85% repeat order rate</strong>, we are the preferred machining sub-contractor for leading valve and pump manufacturers.</p>
+      </div>
+      <div class="col-6">
+        <div class="vm-card v">
+          <div class="vm-label">Vision Statement</div>
+          <div class="vm-text">To be the most trusted large-diameter precision machining partner for valve and pump manufacturers in India — delivering components that ensure zero leakage, long service life, and absolute dimensional integrity in the most critical flow control applications.</div>
+        </div>
+        <div class="vm-card m">
+          <div class="vm-label">Mission Statement</div>
+          <div class="vm-text">To deliver repeatable precision through ISO-governed processes, engage our clients' engineers from prototype through full production, and maintain uncompromised quality and on-time delivery as non-negotiable standards — every order, every component.</div>
+        </div>
+        <div class="vm-card" style="background:var(--cloud);border-left:3px solid var(--slate);">
+          <div class="vm-label">Quality Policy</div>
+          <div class="vm-text">"Zero defects, on-time delivery, and continuous improvement — driven by data and verified by calibrated measurement."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">1985</div>
+        <div class="stat-lbl">Year Established</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10K<sup>sq.ft</sup></div>
+        <div class="stat-lbl">Facility Area</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15<sup>+</sup></div>
+        <div class="stat-lbl">Skilled Professionals</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">200<sup>MT+</sup></div>
+        <div class="stat-lbl">Annual Output</div>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Our Journey</div>
+    <div class="heading-md" style="margin-bottom:14px;">Company Milestones</div>
+
+    <div class="two-col">
+      <div class="col">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">1985</div>
+            <div class="tl-title">Founded in Hubballi</div>
+            <div class="tl-desc">Established as a precision machining workshop, initially serving local engineering OEMs with centre lathe operations.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">1995</div>
+            <div class="tl-title">Large-Diameter Specialisation</div>
+            <div class="tl-desc">Invested in first horizontal boring machines, enabling valve body machining up to 600mm — entered the valve OEM supply chain.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2005</div>
+            <div class="tl-title">Facility Expansion</div>
+            <div class="tl-desc">Shifted to 10,000 sq. ft. Gamanagatti Industrial Estate facility. Installed 5T EOT crane for heavy component handling.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2012</div>
+            <div class="tl-title">CNC VTL Investment</div>
+            <div class="tl-desc">Commissioned ACE VTL-30plus CNC Vertical Turning Lathe — expanded capacity to 1600mm swing, serving large gate valve and API-class components.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2018</div>
+            <div class="tl-title">ISO 9001:2015 Certification</div>
+            <div class="tl-desc">Achieved ISO 9001:2015 certification. Implemented SPC, NABL-traceable calibration, and digital inspection reporting systems.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024–25</div>
+            <div class="tl-title">MNC Vendor Programme</div>
+            <div class="tl-desc">Formalized MNC vendor registration capability — export documentation, DFM engineering support, and compliance documentation fully structured.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Precision · Consistency · Engineering Partnership Since 1985</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 3 — CORE SERVICES
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Core Services</div>
+      <div class="pg-num">02</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">What We Deliver</div>
+    <div class="heading-xl">Valve & Pump Machining —<br>Prototype to Production</div>
+    <p class="body-lg" style="margin-bottom:18px;">We specialise in the precision machining of large-diameter industrial components — particularly valve bodies, pump casings, and custom-engineered fluid control parts. From drawing review and DFM through to final inspection and export-ready dispatch, we manage the complete machining value chain.</p>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-water"></i></div>
+        <div class="svc-title">Industrial Valve Component Machining</div>
+        <ul class="svc-list">
+          <li>Ball, Gate, Globe, Check & Butterfly valve bodies</li>
+          <li>Valve bonnets, discs, seats & seat rings</li>
+          <li>Stems, yokes, gland flanges & packing followers</li>
+          <li>API 6D / ASME / DIN / BS class valve components</li>
+          <li>Sizes from 2" to 60" bore diameter</li>
+          <li>Materials: Cast Iron, Carbon Steel, SS 304/316, Duplex</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-tachometer-alt"></i></div>
+        <div class="svc-title">Pump & Rotating Equipment Components</div>
+        <ul class="svc-list">
+          <li>Centrifugal pump casings — split & single-piece</li>
+          <li>Impellers, wear rings & stage diffusers</li>
+          <li>Bearing housings, cartridge seals & shaft sleeves</li>
+          <li>Base plates, coupling guards & adaptor flanges</li>
+          <li>Vertical turbine pump bowl assemblies</li>
+          <li>Suction & discharge nozzle machining</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-drafting-compass"></i></div>
+        <div class="svc-title">Custom Engineering & Prototype Machining</div>
+        <ul class="svc-list">
+          <li>Complex 3D geometries from customer drawings (2D/3D)</li>
+          <li>One-off prototypes to high-volume production batches</li>
+          <li>Design for Manufacturability (DFM) consultation</li>
+          <li>Reverse engineering from physical samples</li>
+          <li>Tooling & fixture design for special components</li>
+          <li>Pre-production feasibility studies — tolerance review</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="fas fa-box-open"></i></div>
+        <div class="svc-title">Material Sourcing & Turnkey Sub-Contract</div>
+        <ul class="svc-list">
+          <li>Approved casting procurement from partner foundries</li>
+          <li>Forging & billet sourcing with material certificates</li>
+          <li>Full heat number traceability maintained through machining</li>
+          <li>Third-party NDT: DP, MPI, UT via accredited partners</li>
+          <li>Export packing & commercial document preparation</li>
+          <li>Consolidated sub-contract logistics coordination</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Manufacturing Process Flow</div>
+    <div class="process-flow">
+      <div class="process-step">
+        <div class="ps-num">01</div>
+        <div class="ps-title">Drawing Review</div>
+        <div class="ps-desc">DFM check, tolerance feasibility, raw material specification</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">02</div>
+        <div class="ps-title">Material Receipt</div>
+        <div class="ps-desc">Incoming inspection, MTC verification, heat number logging</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">03</div>
+        <div class="ps-title">Machining</div>
+        <div class="ps-desc">CNC/VTL, boring, drilling — in-process SPC gauging</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">04</div>
+        <div class="ps-title">Inspection</div>
+        <div class="ps-desc">Final dimensional check with calibrated instruments &amp; digital report</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">05</div>
+        <div class="ps-title">Dispatch</div>
+        <div class="ps-desc">Export packing, DR sheet, MTC & test reports</div>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Industries Served</div>
+    <div class="chip-wrap">
+      <span class="chip accent">OEM Valve Manufacturers</span>
+      <span class="chip accent">Pump & Rotating Equipment</span>
+      <span class="chip accent">Flow Control & Actuation</span>
+      <span class="chip">Oil & Gas — Upstream / Midstream</span>
+      <span class="chip">Power Generation & Utilities</span>
+      <span class="chip">Chemical & Process Industry</span>
+      <span class="chip">Water Treatment & Infrastructure</span>
+      <span class="chip">Defence & Heavy Engineering</span>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Precision · Large Capacity · On-Time Delivery</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 4 — MACHINING CAPABILITIES
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Machining Capabilities</div>
+      <div class="pg-num">03</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Equipment & Infrastructure</div>
+    <div class="heading-xl">World-Class Machining Infrastructure</div>
+    <p class="body-lg" style="margin-bottom:16px;">Our facility is equipped with a comprehensive range of precision machine tools, heavy lifting infrastructure, and calibrated metrology instruments — enabling us to handle the full scope of large-diameter valve and pump machining in-house with speed and consistency.</p>
+
+    <table class="cap-table">
+      <thead>
+        <tr>
+          <th>Machine Type</th>
+          <th>Key Specification</th>
+          <th>Make / Origin</th>
+          <th>Qty</th>
+          <th>Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CNC Vertical Turning Lathe (VTL)</td>
+          <td><span class="val">1600mm swing · 1200mm ht.</span></td>
+          <td>Webster & Bennett Series-S</td>
+          <td>1</td>
+          <td>Large valve bodies, pump casings</td>
+        </tr>
+        <tr>
+          <td>CNC Vertical Turning Lathe (VTL)</td>
+          <td><span class="val">1000mm swing · 700mm ht.</span></td>
+          <td>ACE VTL-30plus</td>
+          <td>1</td>
+          <td>valve bodies, pump casings</td>
+        </tr>
+        <tr>
+          <td>Horizontal Boring Machine</td>
+          <td><span class="val">100mm spindle dia.</span></td>
+          <td>KARAM (India)</td>
+          <td>1</td>
+          <td>Bore alignment, valve bodies</td>
+        </tr>
+        <tr>
+          <td>Horizontal Boring Machine</td>
+          <td><span class="val">80mm spindle dia.</span></td>
+          <td>Scharmann (Germany)</td>
+          <td>1</td>
+          <td>Precision bore work, flanges</td>
+        </tr>
+        <tr>
+          <td>Radial Drilling Machine</td>
+          <td><span class="val">70mm drill capacity</span></td>
+          <td>HMT RM63 / Caser F50-1250 / Bowes</td>
+          <td>2</td>
+          <td>Bolt circles, tap drilling</td>
+        </tr>
+        <tr>
+          <td>Centre Lathe — Heavy Duty</td>
+          <td><span class="val">Large swing / 1.5meter+ Center height</span></td>
+          <td>Super Models (Rajkot / Batala)</td>
+          <td>3</td>
+          <td>Shafts, stems, large bores</td>
+        </tr>
+        <tr>
+          <td>Centre Lathe — Medium Precision</td>
+          <td><span class="val">Standard capacity</span></td>
+          <td>Bombay Lathe / Accurate Rajkot</td>
+          <td>2</td>
+          <td>Glands, rings, couplers</td>
+        </tr>
+        <tr>
+          <td>EOT Overhead Cranes</td>
+          <td><span class="val">3,000 kg + 5,000 kg</span></td>
+          <td>In-house (Certified)</td>
+          <td>2</td>
+          <td>Component material handling</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="kpi-bar">
+      <div class="kpi-item">
+        <div class="kpi-num">±0.02<span class="kpi-unit">mm</span></div>
+        <div class="kpi-lbl">Standard Tolerance (tighter on request)</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-num">Ra 1.6<span class="kpi-unit">µm</span></div>
+        <div class="kpi-lbl">Surface Finish Capability</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-num">Cpk ≥ 1.33</div>
+        <div class="kpi-lbl">Process Capability Index (SPC)</div>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Facility Infrastructure</div>
+    <div class="infra-grid">
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-ruler-combined"></i></div>
+        <div class="infra-title">Metrology & Inspection</div>
+        <div class="infra-text">Calibrated bore gauges, micrometers, height gauges, surface roughness tester (portable), dial indicators — all NABL-traceable. Inspection reports issued in PDF with every shipment.</div>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-industry"></i></div>
+        <div class="infra-title">10,000 sq. ft. Shop Floor</div>
+        <div class="infra-text">Purpose-built industrial facility in Gamanagatti Industrial Estate, Hubballi. Organised 5S work environment. Dedicated raw material, WIP, and finished goods storage zones.</div>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-hard-hat"></i></div>
+        <div class="infra-title">Material Handling</div>
+        <div class="infra-text">Dual EOT certified overhead cranes (3T + 5T capacity), enabling safe and efficient movement of large valve castings and forgings up to 5,000 kg per lift.</div>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-clipboard-check"></i></div>
+        <div class="infra-title">Quality Management</div>
+        <div class="infra-text">Dedicated quality engineer, SPC control charts, first-article inspection, in-process gauging at critical operations, final inspection before dispatch.</div>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-search"></i></div>
+        <div class="infra-title">NDT Testing (Partner)</div>
+        <div class="infra-text">Dye Penetrant (DP), Magnetic Particle Inspection (MPI), and Ultrasonic Testing (UT) available through accredited NDT partner labs on customer request.</div>
+      </div>
+      <div class="infra-card">
+        <div class="infra-icon"><i class="fas fa-ship"></i></div>
+        <div class="infra-title">Export Packing</div>
+        <div class="infra-text">Export-standard packing: wooden crates, VCI packaging, component protection coating. Full export documentation including packing list, COO, MTC, and test reports.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Engineered for Precision · Trusted for Consistency</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 5 — QUALITY ASSURANCE & COMPLIANCE
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Quality & Compliance</div>
+      <div class="pg-num">04</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Quality Management System</div>
+    <div class="heading-xl">ISO 9001:2015 Certified —<br>MNC Vendor Compliant</div>
+
+    <div class="q-banner">
+      <div class="q-banner-head">
+        <i class="fas fa-shield-alt" style="color:var(--copper-lt);font-size:20px;"></i>
+        <div class="q-banner-title">Comprehensive Quality Assurance Framework</div>
+      </div>
+      <div class="q-grid">
+        <div class="q-item"><i class="fas fa-check q-tick"></i>ISO 9001:2015 certified Quality Management System — annual surveillance audit maintained</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Statistical Process Control (SPC) on all critical dimensions — Cpk ≥ 1.33 documented</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>All measuring instruments calibrated to NABL traceability — certificates on file</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Full material traceability — heat number to finished component mapping</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>First Article Inspection (FAI) with dimensional report for all new components</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Digital inspection reports (PDF) issued with every shipment — archived 5 years</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Partner NDT services: DP, MPI, UT — all via accredited third-party labs</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Customer quality audits facilitated — qualified QM on-site available</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Root cause analysis with 8D report within 48 hours for any non-conformance</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Full workmanship warranty — non-conforming parts replaced at zero cost</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>EHS policy documented — compliant with relevant sourcing & safety regulations</div>
+        <div class="q-item"><i class="fas fa-check q-tick"></i>Export packing & international shipment documentation capability</div>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Compliance Documentation</div>
+    <table class="compliance-table">
+      <thead>
+        <tr>
+          <th>Compliance Area</th>
+          <th>Standard / Scope</th>
+          <th>Status</th>
+          <th>Available For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quality Management System</td>
+          <td>ISO 9001:2015</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Certified</span></td>
+          <td>Certificate copy on request</td>
+        </tr>
+        <tr>
+          <td>Dimensional Inspection Reports</td>
+          <td>Customer drawing / GD&T</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Per Shipment</span></td>
+          <td>PDF with each delivery</td>
+        </tr>
+        <tr>
+          <td>Instrument Calibration</td>
+          <td>NABL traceable (India)</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Active</span></td>
+          <td>Calibration certs on request</td>
+        </tr>
+        <tr>
+          <td>Material Test Certificates</td>
+          <td>Mill/foundry MTC with heat no.</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Per Batch</span></td>
+          <td>Supplied with each batch</td>
+        </tr>
+        <tr>
+          <td>NDT Testing</td>
+          <td>DP / MPI / UT per ASME / IS codes</td>
+          <td><span class="status-avail">On Request</span></td>
+          <td>Accredited partner lab reports</td>
+        </tr>
+        <tr>
+          <td>SPC Process Capability</td>
+          <td>Cpk ≥ 1.33 on critical dims</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Maintained</span></td>
+          <td>Control charts available</td>
+        </tr>
+        <tr>
+          <td>EHS Policy</td>
+          <td>Environmental, Health & Safety</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Documented</span></td>
+          <td>On request for vendor audit</td>
+        </tr>
+        <tr>
+          <td>Export Documentation</td>
+          <td>COO, Packing List, Commercial Invoice</td>
+          <td><span class="status-yes"><i class="fas fa-check-circle"></i> Ready</span></td>
+          <td>Issued per export order</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Case Study</div>
+    <div class="case-study">
+      <div class="case-badge">Manufacturing Case Study</div>
+      <div class="case-title">API 6D Class — 24" Gate Valve Body Machining (Cast Iron, 50-Piece Production Run)</div>
+      <div class="case-cols">
+        <div>
+          <div class="case-blk-label">Challenge</div>
+          <div class="case-blk-text">Machine a 36" gate valve body (Grade CI) requiring tight seat concentricity (±0.02mm) and bore alignment across a complex multi-cavity casting for a confidential API 6D-certified valve OEM. Component required zero leakage at hydrotest pressure.</div>
+        </div>
+        <div>
+          <div class="case-blk-label">Our Approach</div>
+          <div class="case-blk-text">Deployed CNC VTL (1600mm swing) for body turning, followed by Scharmann HBM for precision bore centreline alignment. Developed custom soft-jaw fixtures for repeatable clamping. Maintained SPC at all critical features throughout the run.</div>
+        </div>
+        <div>
+          <div class="case-blk-label">Results Delivered</div>
+          <div class="case-blk-text"><strong>±0.015mm concentricity achieved</strong> — exceeding specification. <strong>Zero leakage</strong> on hydrotest across all 50 pieces. Delivered in <strong>4 weeks</strong>. Client has placed 4 consecutive repeat orders for the same component family.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Zero Defects · Full Traceability · Audit Ready</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 6 — CLIENTS, DELIVERY & PERFORMANCE
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Clients & Performance</div>
+      <div class="pg-num">05</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Our Clients</div>
+    <div class="heading-xl">Trusted by India's Leading<br>Valve & Pump OEMs</div>
+    <p class="body-lg">For over four decades, Solanke Enterprises has supplied precision machined components to leading valve and pump manufacturers across Karnataka, Maharashtra, and beyond. Our <strong>85% repeat order rate</strong> reflects the confidence our clients place in our consistency, quality, and engineering responsiveness.</p>
+
+    <div class="client-grid">
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Trillium Flow Technologies</div>
+          <div class="client-loc">Global valve OEM — MNC registered vendor</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Perfect Actuators Pvt. Ltd.</div>
+          <div class="client-loc">Hubli — Actuator & valve controls</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Khimji Flow Equipments</div>
+          <div class="client-loc">Flow equipment manufacturer</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Akay Industries</div>
+          <div class="client-loc">Dharwad — Industrial components</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Micon Valves</div>
+          <div class="client-loc">Dharwad — Valve manufacturer</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Microfinish Valves</div>
+          <div class="client-loc">Precision valve components</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Shalimar Valves</div>
+          <div class="client-loc">Industrial valve OEM</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Kenwood Valve Controls</div>
+          <div class="client-loc">Control valve manufacturer</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Tulip Castech Pvt. Ltd.</div>
+          <div class="client-loc">Kolhapur — Casting & machining</div>
+        </div>
+      </div>
+      <div class="client-row">
+        <div class="client-mark"><i class="fas fa-industry"></i></div>
+        <div>
+          <div class="client-name">Aqua Valves</div>
+          <div class="client-loc">Belgaum — Water valve manufacturer</div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--text-3);font-style:italic;margin-top:8px;">+ Additional long-term OEM partners across Hubli, Dharwad, Belgaum, Kolhapur regions. Client names withheld per confidentiality agreements where applicable.</p>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Delivery & Commercial Terms</div>
+    <div class="delivery-grid">
+      <div class="del-card">
+        <div class="del-icon"><i class="fas fa-stopwatch"></i></div>
+        <div class="del-val">20–25</div>
+        <div class="del-sub">Working Days</div>
+        <div class="del-desc">Prototype & First Article — from receipt of approved drawing and raw material</div>
+      </div>
+      <div class="del-card">
+        <div class="del-icon"><i class="fas fa-boxes"></i></div>
+        <div class="del-val">4–5</div>
+        <div class="del-sub">Weeks (Bulk Run)</div>
+        <div class="del-desc">Series production batches — subject to quantity, complexity, and material lead time</div>
+      </div>
+      <div class="del-card">
+        <div class="del-icon"><i class="fas fa-layer-group"></i></div>
+        <div class="del-val">100<sup>+</sup></div>
+        <div class="del-sub">Pieces / Month</div>
+        <div class="del-desc">Maximum monthly production capacity for standard valve component families</div>
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Performance Metrics — Last 12 Months</div>
+    <div class="perf-grid">
+      <div class="perf-card">
+        <div class="perf-num">98<span class="perf-unit">%</span></div>
+        <div class="perf-lbl">On-Time Delivery Rate</div>
+        <div class="perf-sub">Verified rolling 12-month record</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-num">85<span class="perf-unit">%</span></div>
+        <div class="perf-lbl">Repeat Order Rate</div>
+        <div class="perf-sub">Customers returning for additional orders</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-num">&lt;0.5<span class="perf-unit">%</span></div>
+        <div class="perf-lbl">Non-Conformance Rate</div>
+        <div class="perf-sub">Defects reported — internal + customer</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-num">200<span class="perf-unit">MT+</span></div>
+        <div class="perf-lbl">Annual Machined Output</div>
+        <div class="perf-sub">Finished precision components by weight</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-num">48<span class="perf-unit">hrs</span></div>
+        <div class="perf-lbl">NCR Response Commitment</div>
+        <div class="perf-sub">Root cause analysis delivery guarantee</div>
+      </div>
+      <div class="perf-card">
+        <div class="perf-num">5<span class="perf-unit">yr</span></div>
+        <div class="perf-lbl">Inspection Record Retention</div>
+        <div class="perf-sub">Full traceability archive maintained</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Trusted Clients · Proven Performance · Long-Term Partnerships</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 7 — WHY CHOOSE US + CONTACT
+══════════════════════════════════════════════ -->
+<div class="page back-cover">
+  <div class="bc-geo"></div>
+  <div class="bc-sidebar"></div>
+  <div class="pg-top-rule" style="background:linear-gradient(90deg,var(--copper),var(--copper-lt),rgba(255,255,255,0.1));"></div>
+  <div class="bc-inner">
+
+    <div class="bc-nav">
+      <div class="bc-logo">SOLANKE <span>ENTERPRISES</span></div>
+      <div class="bc-iso-badge"><i class="fas fa-certificate"></i>&nbsp; ISO 9001 : 2015 Certified</div>
+    </div>
+
+    <div class="bc-headline">The Partner MNCs<br>Rely On.</div>
+    <div class="bc-sub">Six compelling reasons why India's leading valve & pump OEMs register Solanke Enterprises as a preferred vendor.</div>
+
+    <div class="why-grid">
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-expand-arrows-alt"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">Unmatched Large-Diameter Capacity</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">1600mm VTL swing diameter — capability that very few machining shops in India can match for large valve bodies and API-class components.</div>
+        </div>
+      </div>
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-chart-bar"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">Statistical Process Control</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">SPC on all critical dimensions with Cpk ≥ 1.33 — the batch-to-batch consistency that MNC procurement and quality systems demand.</div>
+        </div>
+      </div>
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-file-alt"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">Audit-Ready Documentation</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">ISO cert, NABL certs, digital inspection reports, MTCs, SPC charts — complete vendor documentation pack available for every order and audit.</div>
+        </div>
+      </div>
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-rocket"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">20-Day Prototype Turnaround</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">New components FAI-approved in 20–25 working days. Then scale to 100+ piece/month production — same quality, faster throughput.</div>
+        </div>
+      </div>
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-users-cog"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">Engineer-to-Engineer Engagement</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">Direct access to technical team for DFM review, tolerance feasibility, and drawing queries — no sales intermediary between your engineer and ours.</div>
+        </div>
+      </div>
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="fas fa-history"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">40 Years of OEM Trust</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">Since 1985 — consistent delivery, long-term client relationships, and an 85% repeat order rate that only genuine quality and service produces.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bc-address">
+      <div class="bc-addr-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <div class="bc-addr-label">Registered Manufacturing Facility</div>
+        <div class="bc-addr-text">#W-60, Women's Park, 1st Stage, Gamanagatti Industrial Estate,<br>Hubballi – 580025, Karnataka, India &nbsp;·&nbsp; GST / Compliance documents on file</div>
+      </div>
+    </div>
+
+    <div class="bc-contact-grid">
+      <div class="bc-ccard">
+        <div class="bc-clabel">Key Contact Person</div>
+        <div class="bc-cval">Mr. Kishan Solanke <br><span style="font-size:10.5px;color:rgba(255,255,255,0.38);">Available for direct technical & commercial discussions</span></div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Mobile / WhatsApp</div>
+        <div class="bc-cval">+91 98440 41123<br>+91 98441 41123</div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Email</div>
+        <div class="bc-cval">solankeenterprises@gmail.com</div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Website</div>
+        <div class="bc-cval">www.SolankeEnterprises.com</div>
+      </div>
+    </div>
+
+    <div class="bc-cta">
+      <div>
+        <div class="bc-cta-text">Ready to register Solanke Enterprises as your approved vendor?</div>
+        <div class="bc-cta-note">ISO cert · Quality manual · Compliance pack · Facility audit support — all available immediately on request.</div>
+      </div>
+      <div class="bc-cta-arrow">Contact Us <i class="fas fa-long-arrow-alt-right"></i></div>
+    </div>
+
+    <div class="bc-footer">
+      <div class="bc-foot-l">© 2025 Solanke Enterprises · Gamanagatti Industrial Estate, Hubballi 580025 · Karnataka, India · Est. 1985</div>
+      <div class="bc-foot-r">Vendor Profile — Commercial in Confidence</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
