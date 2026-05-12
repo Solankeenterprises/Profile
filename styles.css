@@ -1412,57 +1412,142 @@ body {
 /* ── RESPONSIVE DESIGN ── */
 @media (max-width: 768px) {
   body {
-    padding: 20px 0 40px;
+    padding: 10px 0 30px;
   }
+
   .page {
-    width: 100%;
-    margin: 10px auto;
+    width: 100% !important;
+    margin: 10px 0 !important;
     min-height: auto;
     box-shadow: var(--shadow-sm);
   }
+
+  /* Push first page below fixed nav */
   .page:first-of-type {
-    margin-top: 60px;
+    margin-top: 60px !important;
   }
+
+  /* Reduce padding that uses mm */
+  .cv-inner,
+  .bc-inner,
+  .pg-body,
+  .pg-nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Typography scale down */
   .cv-company-name {
-    font-size: 48px;
+    font-size: 48px !important;
     letter-spacing: -1px;
   }
   .cv-company-sub {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .heading-xl {
-    font-size: 26px;
+    font-size: 26px !important;
   }
-  .two-col, .why-grid, .svc-grid, .infra-grid, .bc-contact-grid {
-    display: block;
+  .heading-md {
+    font-size: 18px !important;
+  }
+  .bc-headline {
+    font-size: 32px !important;
+  }
+
+  /* Stack columns */
+  .two-col,
+  .why-grid,
+  .svc-grid,
+  .infra-grid,
+  .bc-contact-grid,
+  .case-cols {
+    display: block !important;
   }
   .col-7, .col-6, .col {
-    flex: none;
-    width: 100%;
+    flex: none !important;
+    width: 100% !important;
   }
-  .pg-nav, .cv-inner, .bc-inner {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+
+  /* Navigation bar – scroll horizontally on small screens */
   .site-nav {
     justify-content: flex-start;
-    gap: 8px;
-    padding: 8px 12px;
+    gap: 4px;
+    padding: 8px 10px;
     overflow-x: auto;
+    white-space: nowrap;
+    z-index: 1001;
   }
   .site-nav a {
     font-size: 8px;
-    padding: 4px 8px;
-    white-space: nowrap;
+    padding: 4px 6px;
+    letter-spacing: 1px;
   }
+
+  /* Process flow: two columns per row */
   .process-flow {
     flex-wrap: wrap;
   }
   .process-step {
     flex: 0 0 45%;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .process-step + .process-step::before {
-    display: none;
+    display: none; /* remove arrows on mobile */
+  }
+
+  /* Delivery grid & perf grid: single column */
+  .delivery-grid,
+  .perf-grid,
+  .stat-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Client grid: single column */
+  .client-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* KPI bar: single column */
+  .kpi-bar {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Why-us cards are already stacked; fine-tune spacing */
+  .why-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Contact form inputs – full width */
+  .bc-ccard form input,
+  .bc-ccard form textarea {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-company-name {
+    font-size: 36px !important;
+  }
+  .cv-company-sub {
+    font-size: 18px !important;
+  }
+  .heading-xl {
+    font-size: 22px !important;
+  }
+  .bc-headline {
+    font-size: 28px !important;
+  }
+  .site-nav a {
+    font-size: 7px;
+    padding: 3px 5px;
+  }
+  .cv-badges {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .cv-badge {
+    width: 100%;
+    justify-content: center;
   }
 }
