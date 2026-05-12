@@ -1412,7 +1412,21 @@ body {
 /* ── RESPONSIVE DESIGN (Mobile first overrides) ── */
 
 /* Base mobile changes for all screens up to 768px */
+
 @media (max-width: 768px) {
+
+  /* Allow page to scroll horizontally so tables can be swiped */
+  .page {
+    overflow: visible;
+    overflow-x: auto;
+  }
+
+  .cap-table,
+  .compliance-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
   /* Prevent horizontal overflow globally */
   html, body {
@@ -1422,7 +1436,7 @@ body {
 
   body {
     padding: 10px 0 30px;
-    display: block;                   /* disable flex layout on body */
+    display: block;
   }
 
   /* Each page fills the screen width */
@@ -1478,7 +1492,7 @@ body {
   .perf-grid,
   .stat-grid {
     grid-template-columns: 1fr !important;
-    display: grid;                    /* ensure grid behaves */
+    display: grid;
   }
 
   /* Flex columns become full width */
