@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solanke Enterprises | Precision Machining | ISO 9001:2015 | Vendor Profile {{ year }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     PAGE 1 — COVER
+══════════════════════════════════════════════ -->
+<div class="page cover">
+  <div class="cv-geo">
+    <div class="cv-geo-circle1"></div>
+    <div class="cv-geo-circle2"></div>
+    <div class="cv-geo-lines"></div>
+  </div>
+  <div class="cv-sidebar"></div>
+  <div class="cv-top-bar"></div>
+
+  <div class="cv-inner">
+    <div class="cv-header-row">
+      <div class="cv-logo-block">
+        <div class="cv-logo-hex"><i class="fas fa-cogs"></i></div>
+        <div>
+          <div class="cv-logo-name">Solanke Enterprises</div>
+          <div class="cv-logo-tagline">Precision Machining · Hubballi, Karnataka, India</div>
+        </div>
+      </div>
+      <div class="cv-doc-ref">
+        <div class="cv-doc-type">Vendor Registration Profile</div>
+        <div class="cv-doc-year">{{ year }} — Edition</div>
+      </div>
+    </div>
+
+    <div class="cv-hero">
+      <div class="cv-overline">
+        <div class="cv-overline-line"></div>
+        <div class="cv-overline-text">{{ cover.overline }}</div>
+      </div>
+
+      <div class="cv-company-name">{{ cover.company_name }}</div>
+      <div class="cv-company-sub">{{ cover.company_sub }}</div>
+      <div class="cv-divider"></div>
+
+      <div class="cv-descriptor">{{ cover.descriptor }}</div>
+      <div class="cv-pitch">{{ cover.pitch }}</div>
+
+      <div class="cv-badges">
+        {% for badge in cover.badges %}
+          <div class="cv-badge"><i class="{{ badge.icon }}"></i> {{ badge.text }}</div>
+        {% endfor %}
+      </div>
+
+      <div class="cv-kpi-row">
+        {% for kpi in cover.kpi %}
+        <div class="cv-kpi-item">
+          <div class="cv-kpi-num">{{ kpi.num }}<span class="cv-kpi-unit">{{ kpi.unit }}</span></div>
+          <div class="cv-kpi-label">{{ kpi.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-bottom">
+    <div class="cv-bottom-l">Established 1985 · 40+ Years of Precision Engineering Excellence</div>
+    <div class="cv-bottom-r">Vendor Profile · Commercial in Confidence · {{ year }}</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 2 — COMPANY OVERVIEW & HISTORY
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Company Overview</div>
+      <div class="pg-num">01</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Who We Are</div>
+    <div class="heading-xl">A Four-Decade Legacy<br>of Precision Engineering</div>
+
+    <div class="two-col">
+      <div class="col-7">
+        <p class="body-lg">Established in <strong>1985</strong> by an engineer-entrepreneur with a clear vision — Solanke Enterprises has grown from a single-machine workshop into one of North Karnataka's most capable <strong>large-diameter precision machining facilities</strong>. Today, we are a <strong>ISO 9001:2015 certified</strong> manufacturing partner serving valve OEMs, pump manufacturers, and flow equipment companies across India.</p>
+        <p class="body-lg">Our <strong>10,000 sq. ft. purpose-built facility</strong> in the Gamanagatti Industrial Estate, Hubballi, operates with a team of <strong>15+ skilled machinists, quality engineers, and tooling experts</strong>. We process raw castings, forgings, and billets into dimensionally verified, ready-to-assemble components — with full material traceability and calibrated inspection documentation.</p>
+        <p class="body-lg">With an annual output exceeding <strong>200 metric tons</strong> of finished precision components, a <strong>98% on-time delivery record</strong>, and an <strong>85% repeat order rate</strong>, we are the preferred machining sub-contractor for leading valve and pump manufacturers.</p>
+      </div>
+      <div class="col-6">
+        <div class="vm-card v">
+          <div class="vm-label">Vision Statement</div>
+          <div class="vm-text">{{ vision }}</div>
+        </div>
+        <div class="vm-card m">
+          <div class="vm-label">Mission Statement</div>
+          <div class="vm-text">{{ mission }}</div>
+        </div>
+        <div class="vm-card" style="background:var(--cloud);border-left:3px solid var(--slate);">
+          <div class="vm-label">Quality Policy</div>
+          <div class="vm-text">{{ quality_policy }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      {% for s in stats %}
+      <div class="stat-card">
+        <div class="stat-num">{{ s.num }}{% if s.sup is defined %}<sup>{{ s.sup }}</sup>{% endif %}</div>
+        <div class="stat-lbl">{{ s.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Our Journey</div>
+    <div class="heading-md" style="margin-bottom:14px;">Company Milestones</div>
+
+    <div class="two-col">
+      <div class="col">
+        <div class="timeline">
+          {% for m in milestones_left %}
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">{{ m.year }}</div>
+            <div class="tl-title">{{ m.title }}</div>
+            <div class="tl-desc">{{ m.desc }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col">
+        <div class="timeline">
+          {% for m in milestones_right %}
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">{{ m.year }}</div>
+            <div class="tl-title">{{ m.title }}</div>
+            <div class="tl-desc">{{ m.desc }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Precision · Consistency · Engineering Partnership Since 1985</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 3 — CORE SERVICES
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Core Services</div>
+      <div class="pg-num">02</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">What We Deliver</div>
+    <div class="heading-xl">Valve & Pump Machining —<br>Prototype to Production</div>
+    <p class="body-lg" style="margin-bottom:18px;">We specialise in the precision machining of large-diameter industrial components — particularly valve bodies, pump casings, and custom-engineered fluid control parts. From drawing review and DFM through to final inspection and export-ready dispatch, we manage the complete machining value chain.</p>
+
+    <div class="svc-grid">
+      {% for svc in services %}
+      <div class="svc-card">
+        <div class="svc-icon-wrap"><i class="{{ svc.icon }}"></i></div>
+        <div class="svc-title">{{ svc.title }}</div>
+        <ul class="svc-list">
+          {% for item in svc['items'] %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Manufacturing Process Flow</div>
+    <div class="process-flow">
+      {% for step in process_steps %}
+      <div class="process-step">
+        <div class="ps-num">{{ step.num }}</div>
+        <div class="ps-title">{{ step.title }}</div>
+        <div class="ps-desc">{{ step.desc }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Industries Served</div>
+    <div class="chip-wrap">
+      {% for ind in industries %}
+      <span class="chip{% if ind.accent %} accent{% endif %}">{{ ind.name }}</span>
+      {% endfor %}
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Precision · Large Capacity · On-Time Delivery</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 4 — MACHINING CAPABILITIES
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Machining Capabilities</div>
+      <div class="pg-num">03</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Equipment & Infrastructure</div>
+    <div class="heading-xl">World-Class Machining Infrastructure</div>
+    <p class="body-lg" style="margin-bottom:16px;">Our facility is equipped with a comprehensive range of precision machine tools, heavy lifting infrastructure, and calibrated metrology instruments — enabling us to handle the full scope of large-diameter valve and pump machining in-house with speed and consistency.</p>
+
+    <table class="cap-table">
+      <thead>
+        <tr>
+          <th>Machine Type</th>
+          <th>Key Specification</th>
+          <th>Make / Origin</th>
+          <th>Qty</th>
+          <th>Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for machine in machines %}
+        <tr>
+          <td>{{ machine.type }}</td>
+          <td><span class="val">{{ machine.spec }}</span></td>
+          <td>{{ machine.make }}</td>
+          <td>{{ machine.qty }}</td>
+          <td>{{ machine.application }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="kpi-bar">
+      {% for kpi in kpi_bar %}
+      <div class="kpi-item">
+        <div class="kpi-num">{{ kpi.num }}{% if kpi.unit %}<span class="kpi-unit">{{ kpi.unit }}</span>{% endif %}</div>
+        <div class="kpi-lbl">{{ kpi.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Facility Infrastructure</div>
+    <div class="infra-grid">
+      {% for item in infra %}
+      <div class="infra-card">
+        <div class="infra-icon"><i class="{{ item.icon }}"></i></div>
+        <div class="infra-title">{{ item.title }}</div>
+        <div class="infra-text">{{ item.text }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Engineered for Precision · Trusted for Consistency</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 5 — QUALITY ASSURANCE & COMPLIANCE
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Quality & Compliance</div>
+      <div class="pg-num">04</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Quality Management System</div>
+    <div class="heading-xl">ISO 9001:2015 Certified —<br>MNC Vendor Compliant</div>
+
+    <div class="q-banner">
+      <div class="q-banner-head">
+        <i class="fas fa-shield-alt" style="color:var(--copper-lt);font-size:20px;"></i>
+        <div class="q-banner-title">Comprehensive Quality Assurance Framework</div>
+      </div>
+      <div class="q-grid">
+        {% for item in quality_items %}
+        <div class="q-item"><i class="fas fa-check q-tick"></i>{{ item }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Compliance Documentation</div>
+    <table class="compliance-table">
+      <thead>
+        <tr>
+          <th>Compliance Area</th>
+          <th>Standard / Scope</th>
+          <th>Status</th>
+          <th>Available For</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in compliance %}
+        <tr>
+          <td>{{ c.area }}</td>
+          <td>{{ c.standard }}</td>
+          <td>
+            {% if c.status == "Certified" or c.status == "Per Shipment" or c.status == "Active" or c.status == "Per Batch" or c.status == "Maintained" or c.status == "Documented" or c.status == "Ready" %}
+            <span class="status-yes"><i class="fas fa-check-circle"></i> {{ c.status }}</span>
+            {% else %}
+            <span class="status-avail">On Request</span>
+            {% endif %}
+          </td>
+          <td>{{ c.available }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Case Study</div>
+    <div class="case-study">
+      <div class="case-badge">Manufacturing Case Study</div>
+      <div class="case-title">{{ case_study.title }}</div>
+      <div class="case-cols">
+        <div>
+          <div class="case-blk-label">Challenge</div>
+          <div class="case-blk-text">{{ case_study.challenge }}</div>
+        </div>
+        <div>
+          <div class="case-blk-label">Our Approach</div>
+          <div class="case-blk-text">{{ case_study.approach }}</div>
+        </div>
+        <div>
+          <div class="case-blk-label">Results Delivered</div>
+          <div class="case-blk-text">{{ case_study.results }}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Zero Defects · Full Traceability · Audit Ready</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 6 — CLIENTS, DELIVERY & PERFORMANCE
+══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="pg-top-rule"></div>
+  <div class="pg-nav">
+    <div class="pg-nav-logo">SOLANKE <span>ENTERPRISES</span></div>
+    <div class="pg-nav-right">
+      <div class="pg-section-name">Clients & Performance</div>
+      <div class="pg-num">05</div>
+    </div>
+  </div>
+  <div class="pg-body">
+
+    <div class="eyebrow">Our Clients</div>
+    <div class="heading-xl">Trusted by India's Leading<br>Valve & Pump OEMs</div>
+    <p class="body-lg">For over four decades, Solanke Enterprises has supplied precision machined components to leading valve and pump manufacturers across Karnataka, Maharashtra, and beyond. Our <strong>85% repeat order rate</strong> reflects the confidence our clients place in our consistency, quality, and engineering responsiveness.</p>
+
+    <div class="client-grid">
+      {% for client in clients %}
+      <div class="client-row">
+        <div class="client-mark"><i class="{{ client.icon }}"></i></div>
+        <div>
+          <div class="client-name">{{ client.name }}</div>
+          <div class="client-loc">{{ client.location }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="font-size:11px;color:var(--text-3);font-style:italic;margin-top:8px;">+ Additional long-term OEM partners across Hubli, Dharwad, Belgaum, Kolhapur regions. Client names withheld per confidentiality agreements where applicable.</p>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Delivery & Commercial Terms</div>
+    <div class="delivery-grid">
+      {% for d in delivery %}
+      <div class="del-card">
+        <div class="del-icon"><i class="{{ d.icon }}"></i></div>
+        <div class="del-val">{{ d.val }}</div>
+        <div class="del-sub">{{ d.sub }}</div>
+        <div class="del-desc">{{ d.desc }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="spacer-sm"></div>
+    <div class="eyebrow">Performance Metrics — Last 12 Months</div>
+    <div class="perf-grid">
+      {% for p in performance %}
+      <div class="perf-card">
+        <div class="perf-num">{{ p.num }}<span class="perf-unit">{{ p.unit }}</span></div>
+        <div class="perf-lbl">{{ p.label }}</div>
+        <div class="perf-sub">{{ p.sub }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+  <div class="pg-footer">
+    <div class="pg-footer-brand">Trusted Clients · Proven Performance · Long-Term Partnerships</div>
+    <div class="pg-footer-conf">Vendor Profile — Commercial in Confidence</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     PAGE 7 — WHY CHOOSE US + CONTACT
+══════════════════════════════════════════════ -->
+<div class="page back-cover">
+  <div class="bc-geo"></div>
+  <div class="bc-sidebar"></div>
+  <div class="pg-top-rule" style="background:linear-gradient(90deg,var(--copper),var(--copper-lt),rgba(255,255,255,0.1));"></div>
+  <div class="bc-inner">
+
+    <div class="bc-nav">
+      <div class="bc-logo">SOLANKE <span>ENTERPRISES</span></div>
+      <div class="bc-iso-badge"><i class="fas fa-certificate"></i>&nbsp; ISO 9001 : 2015 Certified</div>
+    </div>
+
+    <div class="bc-headline">The Partner MNCs<br>Rely On.</div>
+    <div class="bc-sub">Six compelling reasons why India's leading valve & pump OEMs register Solanke Enterprises as a preferred vendor.</div>
+
+    <div class="why-grid">
+      {% for item in why_us %}
+      <div class="why-card" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);">
+        <div class="why-icon-col"><i class="{{ item.icon }}"></i></div>
+        <div>
+          <div class="why-card-title" style="color:var(--white);">{{ item.title }}</div>
+          <div class="why-card-text" style="color:rgba(255,255,255,0.52);">{{ item.text }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="bc-address">
+      <div class="bc-addr-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <div class="bc-addr-label">Registered Manufacturing Facility</div>
+        <div class="bc-addr-text">{{ contact.address }}</div>
+      </div>
+    </div>
+
+    <div class="bc-contact-grid">
+      <div class="bc-ccard">
+        <div class="bc-clabel">Key Contact Person</div>
+        <div class="bc-cval">{{ contact.person }}<br><span style="font-size:10.5px;color:rgba(255,255,255,0.38);">{{ contact.person_note }}</span></div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Mobile / WhatsApp</div>
+        <div class="bc-cval">{% for phone in contact.phones %}{{ phone }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Email</div>
+        <div class="bc-cval">{{ contact.email }}</div>
+      </div>
+      <div class="bc-ccard">
+        <div class="bc-clabel">Website</div>
+        <div class="bc-cval">{{ contact.website }}</div>
+      </div>
+    </div>
+
+    <div class="bc-cta">
+      <div>
+        <div class="bc-cta-text">Ready to register Solanke Enterprises as your approved vendor?</div>
+        <div class="bc-cta-note">ISO cert · Quality manual · Compliance pack · Facility audit support — all available immediately on request.</div>
+      </div>
+      <div class="bc-cta-arrow">Contact Us <i class="fas fa-long-arrow-alt-right"></i></div>
+    </div>
+
+    <div class="bc-footer">
+      <div class="bc-foot-l">© {{ year }} Solanke Enterprises · Gamanagatti Industrial Estate, Hubballi 580025 · Karnataka, India · Est. 1985</div>
+      <div class="bc-foot-r">Vendor Profile — Commercial in Confidence</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
