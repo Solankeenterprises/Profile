@@ -1358,3 +1358,53 @@ body {
   .page { margin: 0; box-shadow: none; }
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
 }
+
+/* ── SITE NAVIGATION ── */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--ink);
+  border-bottom: 2px solid var(--copper);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: rgba(255,255,255,0.7);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  background: rgba(184,115,51,0.2);
+  color: var(--copper-lt);
+}
+
+/* Push page content below fixed nav */
+.page:first-of-type {
+  margin-top: 60px;
+}
+
+/* ── SITE FOOTER ── */
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  background: var(--mist);
+  border-top: 1px solid var(--border);
+  font-size: 10px;
+  color: var(--text-3);
+  font-family: 'Outfit', sans-serif;
+}
