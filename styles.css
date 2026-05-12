@@ -1408,3 +1408,61 @@ body {
   color: var(--text-3);
   font-family: 'Outfit', sans-serif;
 }
+
+/* ── RESPONSIVE DESIGN ── */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 0 40px;
+  }
+  .page {
+    width: 100%;
+    margin: 10px auto;
+    min-height: auto;
+    box-shadow: var(--shadow-sm);
+  }
+  .page:first-of-type {
+    margin-top: 60px;
+  }
+  .cv-company-name {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+  .cv-company-sub {
+    font-size: 24px;
+  }
+  .heading-xl {
+    font-size: 26px;
+  }
+  .two-col, .why-grid, .svc-grid, .infra-grid, .bc-contact-grid {
+    display: block;
+  }
+  .col-7, .col-6, .col {
+    flex: none;
+    width: 100%;
+  }
+  .pg-nav, .cv-inner, .bc-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site-nav {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 12px;
+    overflow-x: auto;
+  }
+  .site-nav a {
+    font-size: 8px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .process-flow {
+    flex-wrap: wrap;
+  }
+  .process-step {
+    flex: 0 0 45%;
+    margin-bottom: 8px;
+  }
+  .process-step + .process-step::before {
+    display: none;
+  }
+}
